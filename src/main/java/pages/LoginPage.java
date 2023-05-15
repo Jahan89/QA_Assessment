@@ -20,14 +20,19 @@ import org.openqa.selenium.support.PageFactory;
     @FindBy(name = "btnLogin")
     private WebElement loginButton;
 
-    public LoginPage(WebDriver driver) {
+    public LoginPage(WebDriver driver, WebElement userId) {
         super(driver);
+        this.userId = userId;
         PageFactory.initElements(driver,this);
     }
 
-    public void loginToApplication(String username, String password){
+    public void logintoapplication(String username, String password){
         elementControl.setText(userId, username);
         elementControl.setText(userPassword, password);
         elementControl.clickElement(loginButton);
+
     }
-}
+
+     public void loginwebsite(String username, String password) {
+     }
+ }
