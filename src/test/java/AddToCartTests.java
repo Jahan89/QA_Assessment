@@ -1,10 +1,7 @@
 import com.aventstack.extentreports.Status;
 
 import org.testng.Assert;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import pages.CartPage;
-import pages.LoginPage;
 
 public class AddToCartTests extends BaseTest {
     LoginPage loginPage;
@@ -14,7 +11,7 @@ public class AddToCartTests extends BaseTest {
     public void addToCart(int id){
         reportUtility.createATestCase("Add to cart ");
         reportUtility.addTestLog(Status.INFO,"Performing Add to cart");
-        CartPage cart = new CartPage(driver);
+        AddToCartTests cart = new addcart(driver);
         cart.addToCart(id);
         String expectedTitle = "Item removed";
         String actualTitle = cmnDriver.getTitleOfPage();

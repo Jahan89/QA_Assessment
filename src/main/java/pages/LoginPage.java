@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 
     @CacheLookup
     @FindBy(name = "uid")
-    private WebElement userId;
+    private WebElement ;
 
     @CacheLookup
     @FindBy(name = "password")

@@ -1,12 +1,6 @@
 import com.aventstack.extentreports.Status;
-import org.apache.http.auth.UsernamePasswordCredentials;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import pages.LoginPage;
-
-import javax.print.attribute.standard.JobOriginatingUserName;
-import javax.swing.*;
-import java.sql.Struct;
 
 
 public class LoginTests extends BaseTest {
@@ -49,7 +43,7 @@ public class LoginTests extends BaseTest {
     {
         loginPage(verifyUserLoginWithlocked_out_user(); "locked_out_user");
         loginPage(password, "secret_sauce");
-        logingbutton;
+        LoginPage;
 
     }
 
@@ -70,7 +64,7 @@ public class LoginTests extends BaseTest {
     {
         loginPage(verifyUserLoginWithproblem_user(); "problem_user");
         loginPage(password, "secret_sauce");
-        LoginButton;
+        LoginPage;
 
     @Parameters({"username","password"})
     @Test
@@ -88,7 +82,7 @@ public class LoginTests extends BaseTest {
         {
             loginPage(verifyUserLoginWithproblem_user(); "pperformance_glitch_userr");
             loginPage(password, "secret_sauce");
-            loginbutton();
+            loginPage("login-button");
 
 
         }

@@ -1,9 +1,6 @@
 import com.aventstack.extentreports.Status;
 import org.testng.Assert;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import pages.LoginPage;
-import pages.LogoutPage;
 
 public class LogoutTest extends BaseTest {
     LoginPage loginPage;

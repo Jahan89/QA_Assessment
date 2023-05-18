@@ -16,7 +16,7 @@ public class LogoutPage extends BasePage{
 
     @CacheLookup
     @FindBy(name = "btnLogout")
-    private WebElement loginButton;
+    private WebElement LogoutButton;
 
     public LogoutPage(WebDriver driver) {
         super(driver);
